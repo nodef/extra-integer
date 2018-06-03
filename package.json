@@ -1,6 +1,6 @@
 {
   "name": "integer-extra",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Extra methods for 32-bit integer.",
   "main": "index.js",
   "devDependencies": {
@@ -21,7 +21,7 @@
     "integer-minvalue": "^0.1.1",
     "integer-nextpow2": "^0.1.2",
     "integer-parity": "^0.1.2",
-    "integer-pow10": "^0.1.2",
+    "integer-pow10": "^0.1.4",
     "integer-pow2": "^0.1.2",
     "integer-signequal": "^0.1.2",
     "integer-signextend": "^0.1.2"
