@@ -1,6 +1,6 @@
 {
-  "name": "integer-extra",
-  "version": "0.1.6",
+  "name": "extra-integer",
+  "version": "0.0.1",
   "description": "Extra methods for 32-bit integer.",
   "main": "index.js",
   "devDependencies": {
