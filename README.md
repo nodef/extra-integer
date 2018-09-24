@@ -9,33 +9,33 @@ const extra = require('extra-integer');
 ```
 
 Contants:
-- [MIN_VALUE](https://www.npmjs.com/package/integer-minvalue)
-- [MAX_VALUE](https://www.npmjs.com/package/integer-maxvalue)
+- [MIN_VALUE](https://www.npmjs.com/package/@extra-integer/min-value)
+- [MAX_VALUE](https://www.npmjs.com/package/@extra-integer/max-value)
 
 Datatype methods:
-- [is](https://www.npmjs.com/package/integer-is)
+- [is](https://www.npmjs.com/package/@extra-integer/is)
 
 Evaluate methods:
-- [abs](https://www.npmjs.com/package/integer-abs)
-- [signEqual](https://www.npmjs.com/package/integer-signequal)
-- [isPow2](https://www.npmjs.com/package/integer-ispow2)
-- [nextPow2](https://www.npmjs.com/package/integer-nextpow2)
-- [log10](https://www.npmjs.com/package/integer-log10)
-- [log2](https://www.npmjs.com/package/integer-log2)
-- [pow10](https://www.npmjs.com/package/integer-pow10)
-- [pow2](https://www.npmjs.com/package/integer-pow2)
-- [parity](https://www.npmjs.com/package/integer-parity)
-- [signExtend](https://www.npmjs.com/package/integer-signextend)
+- [abs](https://www.npmjs.com/package/@extra-integer/abs)
+- [signEqual](https://www.npmjs.com/package/@extra-integer/sign-equal)
+- [isPow2](https://www.npmjs.com/package/@extra-integer/is-pow2)
+- [nextPow2](https://www.npmjs.com/package/@extra-integer/next-pow2)
+- [log10](https://www.npmjs.com/package/@extra-integer/log10)
+- [log2](https://www.npmjs.com/package/@extra-integer/log2)
+- [pow10](https://www.npmjs.com/package/@extra-integer/pow10)
+- [pow2](https://www.npmjs.com/package/@extra-integer/pow2)
+- [parity](https://www.npmjs.com/package/@extra-integer/parity)
+- [signExtend](https://www.npmjs.com/package/@extra-integer/sign-extend)
 
 Bitwise methods:
-- [bitParity](https://www.npmjs.com/package/integer-bitparity)
-- [bitScan](https://www.npmjs.com/package/integer-bitscan)
-- [bitCount](https://www.npmjs.com/package/integer-bitcount)
-- [bitSetIf](https://www.npmjs.com/package/integer-bitsetif)
-- [bitSwap](https://www.npmjs.com/package/integer-bitswap)
-- [bitReverse](https://www.npmjs.com/package/integer-bitreverse)
-- [bitMerge](https://www.npmjs.com/package/integer-bitmerge)
-- [bitInterleave](https://www.npmjs.com/package/integer-bitinterleave)
+- [bitParity](https://www.npmjs.com/package/@extra-integer/bit-parity)
+- [bitScan](https://www.npmjs.com/package/@extra-integer/bit-scan)
+- [bitCount](https://www.npmjs.com/package/@extra-integer/bit-count)
+- [bitSetIf](https://www.npmjs.com/package/@extra-integer/bit-set-if)
+- [bitSwap](https://www.npmjs.com/package/@extra-integer/bit-swap)
+- [bitReverse](https://www.npmjs.com/package/@extra-integer/bit-reverse)
+- [bitMerge](https://www.npmjs.com/package/@extra-integer/bit-merge)
+- [bitInterleave](https://www.npmjs.com/package/@extra-integer/bit-interleave)
 
 
 [![Merferry](https://i.imgur.com/toEbRv5.jpg)](https://merferry.github.io)
