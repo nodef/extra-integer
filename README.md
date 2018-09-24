@@ -1,5 +1,6 @@
 # integer-extra
 
+> NOTE: [integer-extra](https://www.npmjs.com/package/integer-extra) was renamed to [extra-integer](https://www.npmjs.com/package/extra-integer).
 [![NPM](https://nodei.co/npm/integer-extra.png)](https://nodei.co/npm/integer-extra/)
 
 Extra methods for [32-bit integer].<br>
