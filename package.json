@@ -1,46 +1,47 @@
 {
-  "name": "integer-extra",
-  "version": "0.1.7",
+  "name": "extra-integer",
+  "version": "0.1.8",
   "description": "Extra methods for 32-bit integer.",
   "main": "index.js",
   "devDependencies": {
-    "integer-abs": "^0.1.2",
-    "integer-bitcount": "^0.1.1",
-    "integer-bitinterleave": "^0.1.1",
-    "integer-bitmerge": "^0.1.1",
-    "integer-bitparity": "^0.1.2",
-    "integer-bitreverse": "^0.1.1",
-    "integer-bitscan": "^0.1.1",
-    "integer-bitsetif": "^0.1.1",
-    "integer-bitswap": "^0.1.1",
-    "integer-is": "^0.1.3",
-    "integer-ispow2": "^0.1.4",
-    "integer-log10": "^0.1.2",
-    "integer-log2": "^0.1.2",
-    "integer-maxvalue": "^0.1.1",
-    "integer-minvalue": "^0.1.1",
-    "integer-nextpow2": "^0.1.2",
-    "integer-parity": "^0.1.2",
-    "integer-pow10": "^0.1.4",
-    "integer-pow2": "^0.1.2",
-    "integer-signequal": "^0.1.2",
-    "integer-signextend": "^0.1.2"
+    "@extra-integer/abs": "^0.1.2",
+    "@extra-integer/bit-count": "^0.1.1",
+    "@extra-integer/bit-interleave": "^0.1.1",
+    "@extra-integer/bit-merge": "^0.1.1",
+    "@extra-integer/bit-parity": "^0.1.2",
+    "@extra-integer/bit-reverse": "^0.1.1",
+    "@extra-integer/bit-scan": "^0.1.1",
+    "@extra-integer/bit-set-if": "^0.1.1",
+    "@extra-integer/bit-swap": "^0.1.1",
+    "@extra-integer/is": "^0.1.3",
+    "@extra-integer/is-pow2": "^0.1.4",
+    "@extra-integer/log10": "^0.1.2",
+    "@extra-integer/log2": "^0.1.2",
+    "@extra-integer/max-value": "^0.1.1",
+    "@extra-integer/min-value": "^0.1.1",
+    "@extra-integer/next-pow2": "^0.1.2",
+    "@extra-integer/parity": "^0.1.2",
+    "@extra-integer/pow10": "^0.1.4",
+    "@extra-integer/pow2": "^0.1.2",
+    "@extra-integer/sign-equal": "^0.1.2",
+    "@extra-integer/sign-extend": "^0.1.2"
   },
   "scripts": {
     "test": "exit"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/integer-extra.git"
+    "url": "git+https://github.com/extra-integer/extra-integer.git"
   },
   "keywords": [
+    "extra",
     "integer",
-    "extra"
+    "merferry"
   ],
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nodef/integer-extra/issues"
+    "url": "https://github.com/extra-integer/extra-integer/issues"
   },
-  "homepage": "https://github.com/nodef/integer-extra#readme"
+  "homepage": "https://github.com/extra-integer/extra-integer#readme"
 }
