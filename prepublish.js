@@ -5,7 +5,7 @@ const fs = require('fs');
 
 
 // Global variables.
-const ORG = 'extra-npm';
+const ORG = 'extra-integer';
 const STDIO = [0, 1, 2];
 
 

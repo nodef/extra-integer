@@ -1,12 +1,13 @@
 {
   "name": "extra-integer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extra methods for 32-bit integer.",
   "main": "index.js",
   "devDependencies": {
     "tempy": "^0.2.1"
   },
   "scripts": {
+    "prepublishOnly": "node ./prepublish",
     "test": "exit"
   },
   "repository": {
