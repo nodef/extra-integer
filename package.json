@@ -1,28 +1,28 @@
 {
   "name": "extra-integer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Extra methods for 32-bit integer.",
   "main": "index.js",
-  "devDependencies": {
-    "tempy": "^0.2.1"
-  },
   "scripts": {
     "prepublishOnly": "node ./prepublish",
     "test": "exit"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/extra-integer/extra-integer.git"
   },
   "keywords": [
     "extra",
     "integer",
     "merferry"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/extra-integer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodef/extra-integer/issues"
+  },
+  "homepage": "https://github.com/nodef/extra-integer#readme",
   "author": "wolfram77@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/extra-integer/extra-integer/issues"
-  },
-  "homepage": "https://github.com/extra-integer/extra-integer#readme"
+  "devDependencies": {
+    "tempy": "^0.2.1"
+  }
 }
