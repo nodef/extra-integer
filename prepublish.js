@@ -11,6 +11,7 @@ const STDIO = [0, 1, 2];
 
 // Get requires from code.
 function pkgRequires(pth, z=[]) {
+  if(path.extname(pth)==='') pth += '.js';
   var dat = fs.readFileSync(pth, 'utf8');
   var pkgs = [], re = /require\(\'(.*?)\'\)/g;
   for(var m=null; (m=re.exec(dat))!=null;)
