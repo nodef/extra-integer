@@ -69,13 +69,7 @@ function pkgScatter(pth, o) {
 // Run on shell.
 function shell(a) {
   var o = {org: ORG};
-  pkgScatter('scripts/clone.sh', o);
-  pkgScatter('scripts/init.sh', o);
-  pkgScatter('scripts/push.sh', o);
-  pkgScatter('scripts/rev-parse.js', o);
-  pkgScatter('scripts/search.js', o);
-  pkgScatter('scripts/validate.js', o);
-  pkgScatter('scripts/view.js', o);
-  pkgScatter('scripts/which.js', o);
+  for(var f of fs.readdirSync('scripts'))
+    if(path.extname(f)==='.js') pkgScatter('scripts/'+f, o);
 };
 if(require.main===module) shell(process.argv);
