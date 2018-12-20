@@ -30,7 +30,7 @@ function pkgUpdate(pkg, o) {
   p.main = o.main||'index.js';
   p.scripts = {test: 'exit'};
   p.keywords.push(o.name);
-  for(var d of Object.keys(p.dependencies))
+  for(var d of Object.keys(p.dependencies||[]))
     if(!o.requires.includes(d)) p.dependencies[d] = undefined;
   p.devDependencies = undefined;
   return p;
