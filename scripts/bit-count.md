@@ -2,7 +2,7 @@ Count bits set in [32-bit integer] *([parallel method])*.
 
 ```javascript
 const bitCount = require('@extra-integer/bit-count');
-// bitCount(<integer>)
+// bitCount(integer)
 
 bitCount(7);
 // 3 (111 => 3)

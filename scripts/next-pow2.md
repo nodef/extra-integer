@@ -2,7 +2,7 @@ Get next [power-2] of [32-bit integer] *([bit-shift method])*.
 
 ```javascript
 const nextPow2 = require('@extra-integer/next-pow2');
-// nextPow2(<integer>)
+// nextPow2(integer)
 
 nextPow2(63);
 // 64

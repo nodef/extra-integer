@@ -2,7 +2,7 @@ Get [power-2] of [32-bit integer].
 
 ```javascript
 const pow2 = require('@extra-integer/pow2');
-// pow2(<integer>)
+// pow2(integer)
 
 pow2(4);
 // 16

@@ -2,7 +2,7 @@ Get [log] base 2 of [32-bit integer] *([DeBruijn method])*.
 
 ```javascript
 const log2 = require('@extra-integer/log2');
-// log2(<integer>)
+// log2(integer)
 
 log2(64);
 // 6

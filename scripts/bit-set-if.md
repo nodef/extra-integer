@@ -2,7 +2,7 @@ Conditionally set or clear bits of [32-bit integer], without branching *([not me
 
 ```javascript
 const bitSetIf = require('@extra-integer/bit-set-if');
-// bitSetIf(<integer>, <mask>, [flag=1])
+// bitSetIf(integer, mask, [flag=1])
 
 bitSetIf(8, 2, 1);
 // 10 (0x8 set 0x2 => 0xA)

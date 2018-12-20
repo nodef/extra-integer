@@ -2,7 +2,7 @@ Check if two [32-bit integers] have equal [sign] *([xor method])*.
 
 ```javascript
 const signEqual = require('@extra-integer/sign-equal');
-// signEqual(<integer-1>, <integer-2>)
+// signEqual(integer1, integer2)
 
 signEqual(20, 12);
 // true

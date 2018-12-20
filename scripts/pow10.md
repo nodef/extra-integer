@@ -2,7 +2,7 @@ Get [power-10] of [32-bit integer] *(lookup method)*.
 
 ```javascript
 const pow10 = require('@extra-integer/pow10');
-// pow10(<integer>)
+// pow10(integer)
 
 pow10(4);
 // 10000

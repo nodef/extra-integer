@@ -2,7 +2,7 @@ Interleave bits of two 16-bit integers to from [32-bit integer] *([binary magic 
 
 ```javascript
 const bitInterleave = require('@extra-integer/bit-interleave');
-// bitInterleave(<integer-1>, <integer-2>)
+// bitInterleave(integer1, integer2)
 
 bitInterleave(0x0000, 0xFFFF);
 // 1431655765 (0x55555555)

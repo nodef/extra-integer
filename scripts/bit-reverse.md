@@ -2,7 +2,7 @@ Reverse all bits of [32-bit integer] *([parallel method])*.
 
 ```javascript
 const bitReverse = require('@extra-integer/bit-reverse');
-// bitReverse(<integer>)
+// bitReverse(integer)
 
 bitReverse(0xFFFF0000);
 // 65535 (0xFFFF0000 => 0x0000FFFF)

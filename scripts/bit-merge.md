@@ -2,7 +2,7 @@ Merge bits from two [32-bit integers], according to mask *([xor method])*.
 
 ```javascript
 const bitMerge = require('@extra-integer/bit-merge');
-// bitMerge(<integer-1>, <integer-2>, <mask>)
+// bitMerge(integer1, integer2, mask)
 
 bitMerge(0x12, 0x24, 0x0F);
 // 20 (0x14)

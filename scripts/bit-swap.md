@@ -2,7 +2,7 @@ Swap bit sequences in [32-bit integer] *([xor method])*.
 
 ```javascript
 const bitSwap = require('@extra-integer/bit-swap');
-// bitSwap(<integer>, <position-1>, <position-2>, [bits=1])
+// bitSwap(integer, <position-1>, <position-2>, [bits=1])
 
 bitSwap(6, 1, 0);
 // 5 (110 => 101)

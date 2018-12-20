@@ -2,7 +2,7 @@
 
 ```javascript
 const signExtend = require('@extra-integer/sign-extend');
-// signExtend(<integer>, <bit-width>)
+// signExtend(integer, <bit-width>)
 
 signExtend(15, 4);
 // -1

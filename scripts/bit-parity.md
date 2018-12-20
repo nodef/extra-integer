@@ -3,7 +3,7 @@ Get bit [parity] of [32-bit integer] *([parallel method])*.
 
 ```javascript
 const bitParity = require('@extra-integer/bit-parity');
-// bitParity(<integer>)
+// bitParity(integer)
 
 bitParity(7);
 // 1 (1,1,1 => 1)

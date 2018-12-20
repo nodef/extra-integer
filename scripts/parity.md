@@ -3,7 +3,7 @@ Get n-bit [parity] of [32-bit integer].
 
 ```javascript
 const parity = require('@extra-integer/parity');
-// parity(<integer>, [bits=1])
+// parity(integer, [bits=1])
 
 parity(7, 1);
 // 1 (1,1,1 => 1)

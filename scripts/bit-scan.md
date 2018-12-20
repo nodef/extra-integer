@@ -2,7 +2,7 @@ Get [position] of first set bit from left of [32-bit integer] *([mod37 method])*
 
 ```javascript
 const bitScan = require('@extra-integer/bit-scan');
-// bitScan(<integer>)
+// bitScan(integer)
 
 bitScan(7);
 // 0 (111 => 0)

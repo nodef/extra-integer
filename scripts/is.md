@@ -2,7 +2,7 @@ Check if value is [32-bit integer].
 
 ```javascript
 const is = require('@extra-integer/is');
-// is(<value>)
+// is(value)
 
 is(95);
 // true

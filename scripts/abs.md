@@ -2,7 +2,7 @@ Get [absolute value] of [32-bit integer] *([xor method])*.
 
 ```javascript
 const abs = require('@extra-integer/abs');
-// abs(<integer>)
+// abs(integer)
 
 abs(-92);
 // 92

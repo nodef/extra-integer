@@ -2,9 +2,9 @@ Extra methods for [32-bit integer].<br>
 Browserified, minified module: [extra-integer.min].
 
 ```javascript
-const extra = require('extra-integer');
-// extra.MIN_VALUE
-// extra.MAX_VALUE
+const Integer = require('extra-integer');
+// Integer.MIN_VALUE
+// Integer.MAX_VALUE
 // ...
 ```
 
@@ -38,7 +38,7 @@ Bitwise methods:
 - [bitInterleave](https://www.npmjs.com/package/@extra-integer/bit-interleave)
 
 
-[![Merferry](https://i.imgur.com/toEbRv5.jpg)](https://merferry.github.io)
+[![nodef](https://i.imgur.com/toEbRv5.jpg)](https://nodef.github.io)
 
 [32-bit integer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 [extra-integer.min]: https://www.npmjs.com/package/extra-integer.min

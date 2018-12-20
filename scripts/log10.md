@@ -2,7 +2,7 @@ Get [log] base 10 of [32-bit integer] *([log2 method])*.
 
 ```javascript
 const log10 = require('@extra-integer/log10');
-// log10(<integer>)
+// log10(integer)
 
 log10(10000);
 // 4

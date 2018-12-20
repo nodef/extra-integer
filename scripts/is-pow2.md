@@ -2,7 +2,7 @@ Check if [32-bit integer] is [power-2] *([decrement method])*.
 
 ```javascript
 const isPow2 = require('@extra-integer/is-pow2');
-// isPow2(<integer>)
+// isPow2(integer)
 
 isPow2(1024);
 // true
