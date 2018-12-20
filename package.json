@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Standard utility methods for 32-bit integer.",
   "main": "index.js",
   "scripts": {
