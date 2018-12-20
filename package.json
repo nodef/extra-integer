@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Extra methods for 32-bit integer.",
   "main": "index.js",
   "devDependencies": {
@@ -24,7 +24,8 @@
     "@extra-integer/pow10": "^1.0.1",
     "@extra-integer/pow2": "^1.0.1",
     "@extra-integer/sign-equal": "^1.0.1",
-    "@extra-integer/sign-extend": "^1.0.1"
+    "@extra-integer/sign-extend": "^1.0.1",
+    "tempy": "^0.2.1"
   },
   "scripts": {
     "test": "exit"
