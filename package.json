@@ -1,7 +1,7 @@
 {
   "name": "extra-integer",
-  "version": "1.0.9",
-  "description": "Extra methods for 32-bit integer.",
+  "version": "1.0.10",
+  "description": "Standard utility methods for 32-bit integer.",
   "main": "index.js",
   "scripts": {
     "prepublishOnly": "node ./prepublish",
@@ -10,6 +10,14 @@
   "keywords": [
     "extra",
     "integer",
+    "standard",
+    "utility",
+    "method",
+    "32bit",
+    "bit",
+    "bitwise",
+    "manipulation",
+    "function",
     "merferry"
   ],
   "repository": {

@@ -1,4 +1,4 @@
-Extra methods for [32-bit integer].<br>
+Standard utility methods for [32-bit integer].<br>
 Browserified, minified module: [extra-integer.min].
 
 ```javascript
