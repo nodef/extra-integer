@@ -1,12 +1,15 @@
 const tempy = require('tempy');
+const bundle = require('./bundle');
 const cp = require('child_process');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
 
 
 // Global variables.
 const ORG = 'extra-integer';
 const STDIO = [0, 1, 2];
+const EOL = os.EOL;
 
 
 // Get requires from code.
@@ -64,10 +67,39 @@ function pkgScatter(pth, o) {
   cp.execSync(`rm -rf ${dir}`, {stdio: STDIO});
 };
 
+function pkgMinify(o) {
+  cp.execSync('npm run browserify', {stdio: STDIO});
+  cp.execSync('npm run uglifyjs', {stdio: STDIO});
+  var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+  var license = fs.readFileSync('LICENSE', 'utf8');
+  var readme = fs.readFileSync('README.md', 'utf8');
+  var index = fs.readFileSync('index.min.js', 'utf8');
+  readme = readme.replace(/(\.<br>)/, ', exported as `Integer`$1');
+  readme = readme.replace(/(\.<br>)[\s\S]*?(\[!\[nodef\])/, `$1Original module: [extra-integer].${EOL}<br>${EOL}${EOL}$2`);
+  readme = readme.replace(/extra-integer\.min/g, 'extra-integer');
+  pkg.name += '.min';
+  pkg.description = pkg.description.replace('.$', ' (browserified, minifined).');
+  pkg.scripts = {test: 'exit'};
+  pkg.devDependencies = undefined;
+  fs.unlinkSync('index.web.js');
+  fs.unlinkSync('index.min.js');
+  var dir = tempy.directory();
+  fs.writeFileSync(path.join(dir, 'index.js'), index);
+  fs.writeFileSync(path.join(dir, 'package.json'), JSON.stringify(pkg, null, 2));
+  fs.writeFileSync(path.join(dir, 'LICENSE'), license);
+  fs.writeFileSync(path.join(dir, 'README.md'), readme);
+  cp.execSync('npm publish', {cwd: dir, stdio: STDIO});
+  cp.execSync(`rm -rf ${dir}`, {stdio: STDIO});
+};
+
 // Run on shell.
-function shell(a) {
+async function shell(a) {
   var o = {org: ORG};
   for(var f of fs.readdirSync('scripts'))
     if(path.extname(f)==='.js') pkgScatter('scripts/'+f, o);
+  fs.renameSync('index.js', 'index.src.js');
+  var out = await bundle('scripts/index.js');
+  fs.writeFileSync('index.js', out);
+  pkgMinify();
 };
 if(require.main===module) shell(process.argv);

@@ -1,10 +1,12 @@
 {
   "name": "extra-integer",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Standard utility methods for 32-bit integer.",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "node ./prepublish",
+    "prepublishOnly": "node ./prepublish; browserify; uglifyjs",
+    "browserify": "browserify index.js -o index.web.js -s Integer",
+    "uglifyjs": "uglifyjs -c -m -o index.min.js index.web.js",
     "test": "exit"
   },
   "keywords": [
@@ -31,6 +33,10 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "tempy": "^0.2.1"
+    "browserify": "^16.2.3",
+    "find-npm-prefix": "^1.0.2",
+    "recast": "^0.16.1",
+    "tempy": "^0.2.1",
+    "uglify-es": "^3.3.9"
   }
 }

@@ -3,5 +3,5 @@ _config.yml
 
 # scripts
 scripts/
-build.js
+bundle.js
 prepublish.js
