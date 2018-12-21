@@ -8,6 +8,8 @@ const os = require('os');
 
 // Global variables.
 const ORG = 'extra-integer';
+const ORIGINAL = 'Original module: [extra-integer].';
+const CDN = '> CDN: [unpkg], [jsDelivr].';
 const STDIO = [0, 1, 2];
 const EOL = os.EOL;
 
@@ -75,8 +77,10 @@ function pkgMinify(o) {
   var readme = fs.readFileSync('README.md', 'utf8');
   var index = fs.readFileSync('index.min.js', 'utf8');
   readme = readme.replace(/(\.<br>)/, ', exported as `Integer`$1');
-  readme = readme.replace(/(\.<br>)[\s\S]*?(\[!\[nodef\])/, `$1Original module: [extra-integer].${EOL}<br>${EOL}${EOL}$2`);
+  readme = readme.replace(/(\.<br>)[\s\S]*?(\[!\[nodef\])/, `$1${ORIGINAL}${EOL}${CDN}${EOL}<br>${EOL}${EOL}$2`);
   readme = readme.replace(/extra-integer\.min/g, 'extra-integer');
+  readme += `[unpkg]: https://unpkg.com/extra-integer.min${EOL}`;
+  readme += `[jsDelivr]: https://cdn.jsdelivr.net/npm/extra-integer.min${EOL}`;
   pkg.name += '.min';
   pkg.description = pkg.description.replace('.$', ' (browserified, minifined).');
   pkg.scripts = {test: 'exit'};
