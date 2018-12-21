@@ -96,7 +96,7 @@ function pkgMinify(o) {
 async function shell(a) {
   var o = {org: ORG};
   for(var f of fs.readdirSync('scripts'))
-    if(path.extname(f)==='.js') pkgScatter('scripts/'+f, o);
+    if(f!=='index.js' && path.extname(f)==='.js') pkgScatter('scripts/'+f, o);
   fs.renameSync('index.js', 'index.src.js');
   var out = await bundle('scripts/index.js');
   fs.writeFileSync('index.js', out);
