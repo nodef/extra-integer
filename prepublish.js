@@ -12,6 +12,19 @@ const STDIO = [0, 1, 2];
 const EOL = os.EOL;
 
 
+
+
+// Execute child process, return promise.
+function cpExec(cmd, o) {
+  var o = o||{}, stdio = o.log? o.stdio||STDIO:o.stdio||[];
+  if(o.log) console.log('-cpExec:', cmd);
+  if(o.stdio==null) return Promise.resolve({stdout: cp.execSync(cmd, {stdio})});
+  return new Promise((fres, frej) => cp.exec(cmd, {stdio}, (err, stdout, stderr) => {
+    return err? frej(err):fres({stdout, stderr});
+  }));
+};
+
+
 // Get requires from code.
 function pkgRequires(pth, z=[]) {
   var dat = fs.readFileSync(pth, 'utf8');
@@ -40,7 +53,7 @@ function pkgUpdate(pkg, o) {
 };
 
 // Scatter a file to package.
-function pkgScatter(pth, o) {
+async function pkgScatter(pth, o) {
   var name = path.basename(pth);
   name = name.substring(0, name.length-path.extname(name).length);
   var pre = pth.substring(0, pth.length-path.extname(pth).length);
@@ -63,11 +76,11 @@ function pkgScatter(pth, o) {
   fs.writeFileSync(path.join(dir, 'LICENSE'), license);
   fs.writeFileSync(path.join(dir, 'README.md'), readme);
   fs.writeFileSync(path.join(dir, main), index);
-  cp.execSync('npm publish', {cwd: dir, stdio: STDIO});
-  cp.execSync(`rm -rf ${dir}`, {stdio: STDIO});
+  await cpExec('npm publish', {cwd: dir, log: true});
+  await cpExec(`rm -rf ${dir}`, {log: true});
 };
 
-function pkgMinify(o) {
+async function pkgMinify(o) {
   cp.execSync('npm run browserify', {stdio: STDIO});
   cp.execSync('npm run uglifyjs', {stdio: STDIO});
   var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
@@ -88,8 +101,8 @@ function pkgMinify(o) {
   fs.writeFileSync(path.join(dir, 'package.json'), JSON.stringify(pkg, null, 2));
   fs.writeFileSync(path.join(dir, 'LICENSE'), license);
   fs.writeFileSync(path.join(dir, 'README.md'), readme);
-  cp.execSync('npm publish', {cwd: dir, stdio: STDIO});
-  cp.execSync(`rm -rf ${dir}`, {stdio: STDIO});
+  await cpExec('npm publish', {cwd: dir, log: true});
+  await cpExec(`rm -rf ${dir}`, {log: true});
 };
 
 // Run on shell.
@@ -97,7 +110,6 @@ async function shell(a) {
   var o = {org: ORG};
   for(var f of fs.readdirSync('scripts'))
     if(f!=='index.js' && path.extname(f)==='.js') pkgScatter('scripts/'+f, o);
-  fs.renameSync('index.js', 'index.src.js');
   var out = await bundle('scripts/index.js');
   fs.writeFileSync('index.js', out);
   pkgMinify();
