@@ -77,7 +77,7 @@ function pkgMinify(o) {
   var readme = fs.readFileSync('README.md', 'utf8');
   var index = fs.readFileSync('index.min.js', 'utf8');
   readme = readme.replace(/(\.<br>)/, ', exported as `Integer`$1');
-  readme = readme.replace(/(\.<br>)[\s\S]*?(\[!\[nodef\])/, `$1${ORIGINAL}${EOL}${CDN}${EOL}<br>${EOL}${EOL}$2`);
+  readme = readme.replace(/(\.)<br>[\s\S]*?(\[!\[nodef\])/, `$1${EOL}${ORIGINAL}${EOL}${CDN}${EOL}<br>${EOL}${EOL}${EOL}$2`);
   readme = readme.replace(/extra-integer\.min/g, 'extra-integer');
   readme += `[unpkg]: https://unpkg.com/extra-integer.min${EOL}`;
   readme += `[jsDelivr]: https://cdn.jsdelivr.net/npm/extra-integer.min${EOL}`;
