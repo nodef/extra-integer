@@ -14,9 +14,15 @@ const STDIO = [0, 1, 2];
 const EOL = os.EOL;
 
 
+// Get filename.
+function resolve(pth) {
+  var ext = path.extname(pth);
+  return ['.js', '.ts', '.json'].includes(ext)? pth:pth+'.js';
+};
+
 // Get requires from code.
 function pkgRequires(pth, z=[]) {
-  var dat = fs.readFileSync(pth, 'utf8');
+  var dat = fs.readFileSync(resolve(pth), 'utf8');
   var pkgs = [], re = /require\(\'(.*?)\'\)/g;
   for(var m=null; (m=re.exec(dat))!=null;)
   { pkgs.push(m[1]); z.push(m[1]); }
@@ -34,7 +40,9 @@ function pkgUpdate(pkg, o) {
   p.description = o.readme.replace(/\r?\n[\s\S]*/, '').replace(/[\_\*\[\]]/g, '');
   p.main = o.main||'index.js';
   p.scripts = {test: 'exit'};
-  p.keywords.push(o.name);
+  Array.prototype.push.apply(p.keywords, o.name.split(/\W/));
+  p.keywords = Array.from(new Set(p.keywords));
+  p.dependencies = Object.assign(p.dependencies||{}, p.devDependencies);
   for(var d of Object.keys(p.dependencies||[]))
     if(!o.requires.includes(d)) p.dependencies[d] = undefined;
   p.devDependencies = undefined;
@@ -57,6 +65,7 @@ function pkgScatter(pth, o) {
   var dir = tempy.directory();
   for(var r of requires) {
     if(!/^[\.\/]/.test(r)) continue;
+    r = resolve(r);
     var src = path.join(path.dirname(pth), r);
     var dst = path.join(dir, r);
     fs.copyFileSync(src, dst);
