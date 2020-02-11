@@ -25,9 +25,9 @@ integer.bitCount(12);
 
 | Name                | Action
 |---------------------|-------
-| [MIN_VALUE]         | Checks if value is boolean.
-| [MAX_VALUE]         | Reads a text, and converts it to a boolean value.
-| [is]                | Gets exclusive-or of 2 boolean values.
+| [MIN_VALUE]         | Minimum 32-bit integer value.
+| [MAX_VALUE]         | Maximum 32-bit integer value.
+| [is]                | Checks if value is 32-bit integer.
 | [abs]               | Gets absolute value of 32-bit integer (xor method).
 | [log2]              | Gets log-base-2 of 32-bit integer (DeBruijn method).
 | [log10]             | Gets log-base-10 of 32-bit integer (log2 method).
