@@ -99,8 +99,8 @@ function nextPow2(x) {
 
 /**
  * Checks if two 32-bit integers have equal sign (xor method).
- * @param {Int32} x first
- * @param {Int32} y second
+ * @param {Int32} x first value
+ * @param {Int32} y second value
  */
 function signEqual(x, y) {
   return (x^y)>=0;
@@ -246,8 +246,8 @@ function bitParity(x) {
   x &= 0xF;
   return (0x6996>>>x) & 1;
 }
-exports.MAX_VALUE = MAX_VALUE;
 exports.MIN_VALUE = MIN_VALUE;
+exports.MAX_VALUE = MAX_VALUE;
 exports.is = is;
 exports.abs = abs;
 exports.log2 = log2;
