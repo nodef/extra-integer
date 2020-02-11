@@ -1,7 +1,7 @@
 {
   "name": "extra-integer",
-  "version": "1.2.1",
-  "description": "Standard utility methods for 32-bit integer.",
+  "version": "1.2.2",
+  "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
   "main": "index.js",
   "scripts": {
     "test": "exit"
@@ -9,15 +9,27 @@
   "keywords": [
     "extra",
     "integer",
-    "standard",
-    "utility",
-    "method",
     "32bit",
     "bit",
+    "abs",
+    "log10",
+    "log2",
+    "pow10",
+    "pow2",
+    "next",
+    "sign",
+    "extend",
     "bitwise",
-    "manipulation",
-    "function",
-    "merferry"
+    "parity",
+    "scan",
+    "count",
+    "get",
+    "set",
+    "setif",
+    "swap",
+    "reverse",
+    "merge",
+    "interleave"
   ],
   "repository": {
     "type": "git",
@@ -28,12 +40,5 @@
   },
   "homepage": "https://github.com/nodef/extra-integer#readme",
   "author": "wolfram77@gmail.com",
-  "license": "MIT",
-  "devDependencies": {
-    "browserify": "^16.2.3",
-    "find-npm-prefix": "^1.0.2",
-    "recast": "^0.16.1",
-    "tempy": "^0.2.1",
-    "uglify-es": "^3.3.9"
-  }
+  "license": "MIT"
 }
