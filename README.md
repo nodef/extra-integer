@@ -52,30 +52,30 @@ integer.bitCount(12);
 <br>
 <br>
 
-[![nodef](https://merferry.glitch.me/card/extra-boolean.svg)](https://nodef.github.io)
+[![nodef](https://merferry.glitch.me/card/extra-integer.svg)](https://nodef.github.io)
 
-[MIN_VALUE]: https://github.com/nodef/extra-boolean/wiki/MIN_VALUE
-[MAX_VALUE]: https://github.com/nodef/extra-boolean/wiki/MAX_VALUE
-[is]: https://github.com/nodef/extra-boolean/wiki/is
-[abs]: https://github.com/nodef/extra-boolean/wiki/abs
-[log2]: https://github.com/nodef/extra-boolean/wiki/log2
-[log10]: https://github.com/nodef/extra-boolean/wiki/log10
-[pow2]: https://github.com/nodef/extra-boolean/wiki/pow2
-[pow10]: https://github.com/nodef/extra-boolean/wiki/pow10
-[isPow2]: https://github.com/nodef/extra-boolean/wiki/isPow2
-[nextPow2]: https://github.com/nodef/extra-boolean/wiki/nextPow2
-[signEqual]: https://github.com/nodef/extra-boolean/wiki/signEqual
-[signExtend]: https://github.com/nodef/extra-boolean/wiki/signExtend
-[parity]: https://github.com/nodef/extra-boolean/wiki/parity
-[bitGet]: https://github.com/nodef/extra-boolean/wiki/bitGet
-[bitSet]: https://github.com/nodef/extra-boolean/wiki/bitSet
-[bitSetAs]: https://github.com/nodef/extra-boolean/wiki/bitSetAs
-[bitSwap]: https://github.com/nodef/extra-boolean/wiki/bitSwap
-[bitReverse]: https://github.com/nodef/extra-boolean/wiki/bitReverse
-[bitMerge]: https://github.com/nodef/extra-boolean/wiki/bitMerge
-[bitInterleave]: https://github.com/nodef/extra-boolean/wiki/bitInterleave
-[bitScan]: https://github.com/nodef/extra-boolean/wiki/bitScan
-[bitCount]: https://github.com/nodef/extra-boolean/wiki/bitCount
-[bitParity]: https://github.com/nodef/extra-boolean/wiki/bitParity
+[MIN_VALUE]: https://github.com/nodef/extra-integer/wiki/MIN_VALUE
+[MAX_VALUE]: https://github.com/nodef/extra-integer/wiki/MAX_VALUE
+[is]: https://github.com/nodef/extra-integer/wiki/is
+[abs]: https://github.com/nodef/extra-integer/wiki/abs
+[log2]: https://github.com/nodef/extra-integer/wiki/log2
+[log10]: https://github.com/nodef/extra-integer/wiki/log10
+[pow2]: https://github.com/nodef/extra-integer/wiki/pow2
+[pow10]: https://github.com/nodef/extra-integer/wiki/pow10
+[isPow2]: https://github.com/nodef/extra-integer/wiki/isPow2
+[nextPow2]: https://github.com/nodef/extra-integer/wiki/nextPow2
+[signEqual]: https://github.com/nodef/extra-integer/wiki/signEqual
+[signExtend]: https://github.com/nodef/extra-integer/wiki/signExtend
+[parity]: https://github.com/nodef/extra-integer/wiki/parity
+[bitGet]: https://github.com/nodef/extra-integer/wiki/bitGet
+[bitSet]: https://github.com/nodef/extra-integer/wiki/bitSet
+[bitSetAs]: https://github.com/nodef/extra-integer/wiki/bitSetAs
+[bitSwap]: https://github.com/nodef/extra-integer/wiki/bitSwap
+[bitReverse]: https://github.com/nodef/extra-integer/wiki/bitReverse
+[bitMerge]: https://github.com/nodef/extra-integer/wiki/bitMerge
+[bitInterleave]: https://github.com/nodef/extra-integer/wiki/bitInterleave
+[bitScan]: https://github.com/nodef/extra-integer/wiki/bitScan
+[bitCount]: https://github.com/nodef/extra-integer/wiki/bitCount
+[bitParity]: https://github.com/nodef/extra-integer/wiki/bitParity
 [32-bit integer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
