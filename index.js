@@ -1,12 +1,12 @@
 /**
- * Maximum 32-bit integer value.
- */
-const MAX_VALUE = 2147483647|0;
-
-/**
  * Minimum 32-bit integer value.
  */
 const MIN_VALUE = -2147483648|0;
+
+/**
+ * Maximum 32-bit integer value.
+ */
+const MAX_VALUE = 2147483647|0;
 
 
 
@@ -21,7 +21,7 @@ function is(x) {
 
 /**
  * Gets absolute value of 32-bit integer (xor method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function abs(x) {
   var m = x>>31;
@@ -35,7 +35,7 @@ const DEBRUIJN_POS32 = [
 
 /**
  * Gets log-base-2 of 32-bit integer (DeBruijn method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function log2(x) {
   x |= x>>>1;
@@ -52,7 +52,7 @@ const POW10_VAL32 = [
 
 /**
  * Gets log-base-10 of 32-bit integer (log2 method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function log10(x) {
   var a = ((log2(x)+1)*1233)>>>12;
@@ -61,7 +61,7 @@ function log10(x) {
 
 /**
  * Gets power-of-2 of 32-bit integer (left-shift method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function pow2(x) {
   return 1<<x;
@@ -69,7 +69,7 @@ function pow2(x) {
 
 /**
  * Gets power-of-10 of 32-bit integer (lookup method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function pow10(x) {
   return x<0? 0:POW10_VAL32[x];
@@ -77,7 +77,7 @@ function pow10(x) {
 
 /**
  * Checks if 32-bit integer is a power-of-2 (decrement method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function isPow2(x) {
   return (x & (x-1))===0;
@@ -85,7 +85,7 @@ function isPow2(x) {
 
 /**
  * Gets next power-of-2 of 32-bit integer (bit-shift method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function nextPow2(x) {
   x--;
@@ -99,8 +99,8 @@ function nextPow2(x) {
 
 /**
  * Checks if two 32-bit integers have equal sign (xor method).
- * @param {Int32} x first value
- * @param {Int32} y second value
+ * @param {Int32} x first integer
+ * @param {Int32} y second integer
  */
 function signEqual(x, y) {
   return (x^y)>=0;
@@ -118,7 +118,7 @@ function signExtend(x, n) {
 
 /**
  * Gets n-bit parity of 32-bit integer.
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  * @param {Int32} n number of bits (1)
  */
 function parity(x, n=1) {
@@ -134,7 +134,7 @@ function parity(x, n=1) {
 
 /**
  * Gets a bit of 32-bit integer (right-shift method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  * @param {Int32} i bit index
  */
 function bitGet(x, i) {
@@ -143,7 +143,7 @@ function bitGet(x, i) {
 
 /**
  * Sets a bit of 32-bit integer (left-shift method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  * @param {Int32} i bit index
  * @param {Int32} f bit value (1)
  */
@@ -153,7 +153,7 @@ function bitSet(x, i, f=1) {
 
 /**
  * Sets bits of 32-bit integer, as per mask (not method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  * @param {Int32} m bit mask
  * @param {Int32} f bit value (1)
  */
@@ -163,7 +163,7 @@ function bitSetAs(x, m, f=1) {
 
 /**
  * Swaps bit sequences in 32-bit integer (xor method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  * @param {Int32} i first bit index
  * @param {Int32} j second bit index
  * @param {Int32} n bit width
@@ -175,7 +175,7 @@ function bitSwap(x, i, j, n=1) {
 
 /**
  * Reverses all bits of 32-bit integer (parallel method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function bitReverse(x) {
   x = ((x>>>1) & 0x55555555) | ((x & 0x55555555)<<1);
@@ -187,9 +187,9 @@ function bitReverse(x) {
 
 /**
  * Merges bits from two 32-bit integers, as per mask (xor method).
- * @param {Int32} x first value
- * @param {Int32} y second value
- * @param {Int32} m bit mask
+ * @param {Int32} x first integer
+ * @param {Int32} y second integer
+ * @param {Int32} m bit mask (0 => from x)
  */
 function bitMerge(x, y, m) {
   return x ^ ((x^y) & m);
@@ -197,8 +197,8 @@ function bitMerge(x, y, m) {
 
 /**
  * Interleaves bits of two 16-bit integers to form 32-bit integer (binary magic method).
- * @param {Int32} x first 16-bit value
- * @param {Int32} y second 16-bit value
+ * @param {Int32} x first 16-bit integer
+ * @param {Int32} y second 16-bit integer
  */
 function bitInterleave(x, y) {
   x = (x | (x<<8)) & 0x00FF00FF;
@@ -218,8 +218,8 @@ const MOD37_POS32 = [
 ];
 
 /**
- * Gets position of first set bit from left of 32-bit integer (mod37 method).
- * @param {Int32} x a value
+ * Gets index of first set bit from left of 32-bit integer (mod37 method).
+ * @param {Int32} x an integer
  */
 function bitScan(x) {
   return MOD37_POS32[(-x & x) % 37];
@@ -227,7 +227,7 @@ function bitScan(x) {
 
 /**
  * Counts bits set in 32-bit integer (parallel method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function bitCount(x) {
   x = x - ((x>>>1) & 0x55555555);
@@ -237,7 +237,7 @@ function bitCount(x) {
 
 /**
  * Gets bit parity of 32-bit integer (parallel method).
- * @param {Int32} x a value
+ * @param {Int32} x an integer
  */
 function bitParity(x) {
   x ^= x>>>16;
