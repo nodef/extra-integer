@@ -54,6 +54,8 @@ integer.bitCount(12);
 
 [![nodef](https://merferry.glitch.me/card/extra-integer.svg)](https://nodef.github.io)
 
+> Browserified, minified version of this package is [extra-integer.min].
+
 [MIN_VALUE]: https://github.com/nodef/extra-integer/wiki/MIN_VALUE
 [MAX_VALUE]: https://github.com/nodef/extra-integer/wiki/MAX_VALUE
 [is]: https://github.com/nodef/extra-integer/wiki/is
@@ -79,3 +81,4 @@ integer.bitCount(12);
 [bitParity]: https://github.com/nodef/extra-integer/wiki/bitParity
 [32-bit integer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
+[extra-integer.min]: https://www.npmjs.com/package/extra-integer.min
