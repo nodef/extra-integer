@@ -1,6 +1,7 @@
 /**
- * Gets power-of-2 of 32-bit integer (left-shift method).
- * @param {Int32} x an integer
+ * Gets power-of-2 (left-shift method).
+ * @param {number} x an int32
+ * @returns {number}
  */
 function pow2(x) {
   return 1<<x;

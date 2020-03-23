@@ -3,8 +3,9 @@ const POW10_VAL32 = [
 ];
 
 /**
- * Gets log-base-10 of 32-bit integer (log2 method).
- * @param {Int32} x an integer
+ * Gets log-base-10 (log2 method).
+ * @param {number} x an int32
+ * @returns {number}
  */
 function log10(x) {
   var a = ((log2(x)+1)*1233)>>>12;

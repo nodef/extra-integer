@@ -1,7 +1,8 @@
 /**
- * Checks if two 32-bit integers have equal sign (xor method).
- * @param {Int32} x first integer
- * @param {Int32} y second integer
+ * Checks if two values have equal sign (xor method).
+ * @param {number} x first int32
+ * @param {number} y second int32
+ * @returns {boolean}
  */
 function signEqual(x, y) {
   return (x^y)>=0;

@@ -1,6 +1,7 @@
 /**
- * Gets next power-of-2 of 32-bit integer (bit-shift method).
- * @param {Int32} x an integer
+ * Gets next power-of-2 (bit-shift method).
+ * @param {number} x an int32
+ * @returns {number}
  */
 function nextPow2(x) {
   x--;

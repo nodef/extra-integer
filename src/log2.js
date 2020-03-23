@@ -4,8 +4,9 @@ const DEBRUIJN_POS32 = [
 ];
 
 /**
- * Gets log-base-2 of 32-bit integer (DeBruijn method).
- * @param {Int32} x an integer
+ * Gets log-base-2 (DeBruijn method).
+ * @param {number} x an int32
+ * @returns {number}
  */
 function log2(x) {
   x |= x>>>1;

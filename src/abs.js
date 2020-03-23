@@ -1,6 +1,7 @@
 /**
- * Gets absolute value of 32-bit integer (xor method).
- * @param {Int32} x an integer
+ * Gets absolute value (xor method).
+ * @param {number} x an int32
+ * @returns {number}
  */
 function abs(x) {
   var m = x>>31;
