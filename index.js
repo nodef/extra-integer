@@ -1,9 +1,9 @@
 /**
- * Minimum 32-bit integer value.
+ * Minimum int32 value.
  */
 const MIN_VALUE = -2147483648|0;
 /**
- * Maximum 32-bit integer value.
+ * Maximum int32 value.
  */
 const MAX_VALUE = 2147483647|0;
 /**
