@@ -2,6 +2,8 @@
 This package includes a number of very interesting [bit twiddling hacks] for
 integers by Sean Eron Anderson and many others.
 
+> Stability: Experimental
+
 ```javascript
 const integer = require('extra-integer');
 
