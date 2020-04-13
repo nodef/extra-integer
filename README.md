@@ -24,19 +24,19 @@ integer.nextPow2(63);
 
 ### reference
 
-| Name                | Action
+| Method              | Action
 |---------------------|-------
 | [MIN_VALUE]         | Minimum int32 value.
 | [MAX_VALUE]         | Maximum int32 value.
 | [is]                | Checks if value is int32.
-| [abs]               | Gets absolute value (xor method).
-| [log2]              | Gets log-base-2 (DeBruijn method).
-| [log10]             | Gets log-base-10 (log2 method).
-| [pow2]              | Gets power-of-2 (left-shift method).
-| [pow10]             | Gets power-of-10 (lookup method).
-| [isPow2]            | Checks if value is a power-of-2 (decrement method).
-| [nextPow2]          | Gets next power-of-2 (bit-shift method).
-| [signEqual]         | Checks if two values have equal sign (xor method).
+| [abs]               | Gets absolute value.
+| [log2]              | Gets log-base-2.
+| [log10]             | Gets log-base-10.
+| [pow2]              | Gets power-of-2.
+| [pow10]             | Gets power-of-10.
+| [isPow2]            | Checks if value is a power-of-2.
+| [nextPow2]          | Gets next power-of-2.
+| [signEqual]         | Checks if two values have equal sign.
 
 <br>
 
