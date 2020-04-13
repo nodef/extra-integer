@@ -1,4 +1,4 @@
-[32-bit integer] can store values from −2^31 to 2^31 − 1.
+[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:vhs:] [:package:] [:moon:]
 
 This package includes a number of very interesting [bit twiddling hacks] for
 integers by Sean Eron Anderson and many others. Each method is also available
@@ -59,3 +59,7 @@ integer.nextPow2(63);
 [isPow2]: https://github.com/nodef/extra-integer/wiki/isPow2
 [nextPow2]: https://github.com/nodef/extra-integer/wiki/nextPow2
 [signEqual]: https://github.com/nodef/extra-integer/wiki/signEqual
+[:running:]: https://npm.runkit.com/extra-integer
+[:vhs:]: https://asciinema.org/a/319518
+[:package:]: https://www.npmjs.com/package/extra-integer
+[:moon:]: https://www.npmjs.com/package/extra-integer.min
