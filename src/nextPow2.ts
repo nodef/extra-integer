@@ -1,9 +1,8 @@
 /**
  * Gets next power-of-2 (bit-shift method).
- * @param {number} x an int32
- * @returns {number}
+ * @param x an int32
  */
-function nextPow2(x) {
+function nextPow2(x: number): number {
   x--;
   x |= x>>>1;
   x |= x>>>2;
@@ -12,4 +11,4 @@ function nextPow2(x) {
   x |= x>>>16;
   return x+1;
 }
-module.exports = nextPow2;
+export default nextPow2;
