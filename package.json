@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "2.0.16",
+  "version": "2.0.17",
   "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
   "main": "index.js",
   "scripts": {
@@ -38,6 +38,6 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "extra-build": "^1.0.113"
+    "extra-build": "^1.0.114"
   }
 }
