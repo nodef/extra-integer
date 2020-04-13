@@ -42,11 +42,8 @@ integer.nextPow2(63);
 
 [![nodef](https://merferry.glitch.me/card/extra-integer.svg)](https://nodef.github.io)
 
-> Browserified, minified version of this package is [extra-integer.min].
-
 [32-bit integer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
-[extra-integer.min]: https://www.npmjs.com/package/extra-integer.min
 [browserify]: https://www.npmjs.com/package/browserify
 [rollup]: https://www.npmjs.com/package/rollup
 [uglify-js]: https://www.npmjs.com/package/uglify-js
