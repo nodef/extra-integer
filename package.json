@@ -1,11 +1,15 @@
 {
   "name": "extra-integer",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
   "main": "index.js",
   "scripts": {
+    "einit": "ebuild init",
+    "eupdate": "ebuild update",
+    "escatter": "ebuild scatter",
     "test": "exit"
   },
+  "runkitExampleFilename": "example.js",
   "keywords": [
     "extra",
     "integer",
@@ -34,8 +38,6 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "find-npm-prefix": "^1.0.2",
-    "recast": "^0.18.7",
-    "tempy": "^0.4.0"
+    "extra-build": "^1.0.113"
   }
 }
