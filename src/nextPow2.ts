@@ -1,5 +1,5 @@
 /**
- * Gets next power-of-2 (bit-shift method).
+ * Gets next power-of-2.
  * @param x an int32
  */
 function nextPow2(x: number): number {

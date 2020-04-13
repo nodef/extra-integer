@@ -1,5 +1,5 @@
 /**
- * Checks if two values have equal sign (xor method).
+ * Checks if two values have equal sign.
  * @param x first int32
  * @param y second int32
  */

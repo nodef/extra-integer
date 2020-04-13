@@ -1,5 +1,5 @@
 /**
- * Checks if value is a power-of-2 (decrement method).
+ * Checks if value is a power-of-2.
  * @param x an int32
  */
 function isPow2(x: number): boolean {

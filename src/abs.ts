@@ -1,5 +1,5 @@
 /**
- * Gets absolute value (xor method).
+ * Gets absolute value.
  * @param x an int32
  */
 function abs(x: number): number {

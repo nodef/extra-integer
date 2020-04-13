@@ -1,7 +1,7 @@
 import DEBRUIJN_POS32 from './_DEBRUIJN_POS32';
 
 /**
- * Gets log-base-2 (DeBruijn method).
+ * Gets log-base-2.
  * @param x an int32
  */
 function log2(x: number): number {
