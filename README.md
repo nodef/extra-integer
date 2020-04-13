@@ -59,6 +59,6 @@ integer.nextPow2(63);
 [nextPow2]: https://github.com/nodef/extra-integer/wiki/nextPow2
 [signEqual]: https://github.com/nodef/extra-integer/wiki/signEqual
 [:running:]: https://npm.runkit.com/extra-integer
-[:vhs:]: https://asciinema.org/a/319518
 [:package:]: https://www.npmjs.com/package/extra-integer
 [:moon:]: https://www.npmjs.com/package/extra-integer.min
+[:vhs:]: https://asciinema.org/a/319556
