@@ -1,16 +1,18 @@
-[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:vhs:] [:package:] [:moon:]
-
-This package includes a number of very interesting [bit twiddling hacks] for
-integers by Sean Eron Anderson and many others.
+[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
 
 Methods as separate packages:
 - `@extra-integer/log2`: use [rollup] to bundle this es module.
 - `@extra-integer/log2.min`: use in browser ([browserify], [uglify-js]).
 
+This package includes a number of very interesting [bit twiddling hacks] for
+integers by Sean Eron Anderson and many others.
+
 > Stability: Experimental
 
 ```javascript
 const integer = require('extra-integer');
+// import * as integer from 'extra-integer';
+// import * as integer from 'https://unpkg.com/extra-integer@2.0.26/index.mjs'; (deno)
 
 integer.is(9.11e-31);
 // false
@@ -62,3 +64,4 @@ integer.nextPow2(63);
 [:package:]: https://www.npmjs.com/package/extra-integer
 [:moon:]: https://www.npmjs.com/package/extra-integer.min
 [:vhs:]: https://asciinema.org/a/319556
+[:ledger:]: https://unpkg.com/extra-integer/
