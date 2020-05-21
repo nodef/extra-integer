@@ -1,8 +1,13 @@
 {
   "name": "extra-integer",
-  "version": "2.0.26",
+  "version": "2.0.27",
   "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
   "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.mjs"
+  },
   "scripts": {
     "einit": "ebuild init",
     "ecode": "ebuild update --docs false",
