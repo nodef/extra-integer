@@ -1,11 +1,11 @@
-[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
+[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:package:] [:moon:] [:ledger:]
 
 Methods as separate packages:
 - `@extra-integer/log2`: use [rollup] to bundle this es module.
 - `@extra-integer/log2.min`: use in browser ([browserify], [uglify-js]).
 
-This package includes a number of very interesting [bit twiddling hacks] for
-integers by Sean Eron Anderson and many others.
+This package includes [bit twiddling hacks], for integers, by Sean Eron Anderson
+and many others.
 
 > Stability: Experimental
 

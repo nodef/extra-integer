@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "2.0.27",
+  "version": "2.0.28",
   "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
   "main": "index.js",
   "module": "index.mjs",
@@ -21,13 +21,13 @@
     "integer",
     "32bit",
     "bit",
-    "MAX_VALUE",
-    "MIN_VALUE",
     "abs",
     "is",
     "isPow2",
     "log10",
     "log2",
+    "MAX_VALUE",
+    "MIN_VALUE",
     "nextPow2",
     "pow10",
     "pow2",
@@ -44,6 +44,6 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "extra-build": "^1.0.147"
+    "extra-build": "^1.0.155"
   }
 }
