@@ -12,7 +12,7 @@ and many others.
 ```javascript
 const integer = require('extra-integer');
 // import * as integer from 'extra-integer';
-// import * as integer from 'https://unpkg.com/extra-integer@2.0.26/index.mjs'; (deno)
+// import * as integer from 'https://unpkg.com/extra-integer@2.0.30/index.mjs'; (deno)
 
 integer.is(9.11e-31);
 // false
@@ -28,17 +28,14 @@ integer.nextPow2(63);
 
 | Method              | Action
 |---------------------|-------
-| [MIN_VALUE]         | Minimum int32 value.
-| [MAX_VALUE]         | Maximum int32 value.
 | [is]                | Checks if value is int32.
 | [abs]               | Gets absolute value.
 | [log2]              | Gets log-base-2.
-| [log10]             | Gets log-base-10.
 | [pow2]              | Gets power-of-2.
-| [pow10]             | Gets power-of-10.
 | [isPow2]            | Checks if value is a power-of-2.
 | [nextPow2]          | Gets next power-of-2.
 | [signEqual]         | Checks if two values have equal sign.
+| [MIN_VALUE]         | Minimum int32 value.
 
 <br>
 
