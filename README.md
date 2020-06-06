@@ -1,4 +1,4 @@
-[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:package:] [:moon:] [:ledger:]
+[32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
 
 Methods as separate packages:
 - `@extra-integer/log2`: use [rollup] to bundle this es module.
