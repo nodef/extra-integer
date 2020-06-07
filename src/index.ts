@@ -8,4 +8,5 @@ export {default as log2} from './log2';
 export {default as nextPow2} from './nextPow2';
 export {default as pow10} from './pow10';
 export {default as pow2} from './pow2';
+export {default as prevPow2} from './prevPow2';
 export {default as signEqual} from './signEqual';
