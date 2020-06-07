@@ -34,6 +34,7 @@ integer.nextPow2(63);
 | [pow2]              | Gets power-of-2.
 | [isPow2]            | Checks if value is a power-of-2.
 | [nextPow2]          | Gets next power-of-2.
+| [prevPow2]          | Gets previous power-of-2.
 | [signEqual]         | Checks if two values have equal sign.
 | [MIN_VALUE]         | Minimum int32 value.
 
@@ -62,3 +63,4 @@ integer.nextPow2(63);
 [:moon:]: https://www.npmjs.com/package/extra-integer.min
 [:vhs:]: https://asciinema.org/a/319556
 [:ledger:]: https://unpkg.com/extra-integer/
+[prevPow2]: https://github.com/nodef/extra-integer/wiki/prevPow2
