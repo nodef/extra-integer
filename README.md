@@ -1,13 +1,16 @@
 [32-bit integer] can store values from −2^31 to 2^31 − 1. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
 
+This package includes [bit twiddling hacks], for integers, by Sean Eron Anderson
+and many others.
+
 Methods as separate packages:
 - `@extra-integer/log2`: use [rollup] to bundle this es module.
 - `@extra-integer/log2.min`: use in browser ([browserify], [uglify-js]).
 
-This package includes [bit twiddling hacks], for integers, by Sean Eron Anderson
-and many others.
 
 > Stability: Experimental
+
+<br>
 
 ```javascript
 const integer = require("extra-integer");
@@ -24,23 +27,28 @@ integer.nextPow2(63);
 // 64
 ```
 
-### reference
-
-| Method              | Action
-|---------------------|-------
-| [is]                | Checks if value is int32.
-| [abs]               | Gets absolute value.
-| [log2]              | Gets log-base-2.
-| [pow2]              | Gets power-of-2.
-| [isPow2]            | Checks if value is a power-of-2.
-| [nextPow2]          | Gets next power-of-2.
-| [prevPow2]          | Gets previous power-of-2.
-| [signEqual]         | Checks if two values have equal sign.
-| [MIN_VALUE]         | Minimum int32 value.
-
+<br>
 <br>
 
-[![nodef](https://merferry.glitch.me/card/extra-integer.svg)](https://nodef.github.io)
+
+## Index
+
+| Method      | Action                                |
+| ----------- | ------------------------------------- |
+| [is]        | Checks if value is int32.             |
+| [abs]       | Gets absolute value.                  |
+| [log2]      | Gets log-base-2.                      |
+| [pow2]      | Gets power-of-2.                      |
+| [isPow2]    | Checks if value is a power-of-2.      |
+| [nextPow2]  | Gets next power-of-2.                 |
+| [prevPow2]  | Gets previous power-of-2.             |
+| [signEqual] | Checks if two values have equal sign. |
+| [MIN_VALUE] | Minimum int32 value.                  |
+
+<br>
+<br>
+
+[![](https://img.youtube.com/vi/EK32jo7i5LQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=EK32jo7i5LQ)
 
 [32-bit integer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
