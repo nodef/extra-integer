@@ -1,7 +1,7 @@
-import nextPow2 from './nextPow2';
+import nextPow2 from "./nextPow2";
 
 /**
- * Gets previous power-of-2.
+ * Finds previous power-of-2.
  * @param x an int32
  */
 function prevPow2(x: number): number {

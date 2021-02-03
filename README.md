@@ -10,9 +10,9 @@ and many others.
 > Stability: Experimental
 
 ```javascript
-const integer = require('extra-integer');
-// import * as integer from 'extra-integer';
-// import * as integer from 'https://unpkg.com/extra-integer@2.0.30/index.mjs'; (deno)
+const integer = require("extra-integer");
+// import * as integer from "extra-integer";
+// import * as integer from "https://unpkg.com/extra-integer@2.0.30/index.mjs"; (deno)
 
 integer.is(9.11e-31);
 // false

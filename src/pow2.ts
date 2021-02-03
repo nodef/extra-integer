@@ -1,5 +1,5 @@
 /**
- * Gets power-of-2.
+ * Finds power-of-2.
  * @param x an int32
  */
 function pow2(x: number): number {

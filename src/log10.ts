@@ -1,8 +1,8 @@
-import log2 from './log2';
-import POW10_VAL32 from './_POW10_VAL32';
+import log2 from "./log2";
+import POW10_VAL32 from "./_POW10_VAL32";
 
 /**
- * Gets log-base-10.
+ * Finds log-base-10.
  * @param x an int32
  */
 function log10(x: number): number {
