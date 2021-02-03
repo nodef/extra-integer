@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "2.0.44",
+  "version": "2.0.45",
   "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
   "main": "index.js",
   "module": "index.mjs",
@@ -9,30 +9,16 @@
     "import": "./index.mjs"
   },
   "scripts": {
-    "einit": "ebuild init",
-    "ecode": "ebuild update --docs false",
-    "eupdate": "ebuild update",
-    "escatter": "ebuild scatter",
-    "test": "exit"
+    "test": "exit",
+    "build": "ebuild export+main+example+wiki+readme --wikiExample=false --asciinema=false",
+    "deploy": "ebuild jsdoc+export+main+meta+example+github+publish"
   },
   "runkitExampleFilename": "example.js",
   "keywords": [
     "extra",
     "integer",
     "32bit",
-    "bit",
-    "abs",
-    "is",
-    "isPow2",
-    "log10",
-    "log2",
-    "MAX_VALUE",
-    "MIN_VALUE",
-    "nextPow2",
-    "pow10",
-    "pow2",
-    "prevPow2",
-    "signEqual"
+    "bit"
   ],
   "repository": {
     "type": "git",
