@@ -2,7 +2,7 @@ Common operations for 32-bit integers.<br>
 📦 [Node.js](https://www.npmjs.com/package/extra-integer),
 🌐 [Web](https://www.npmjs.com/package/extra-integer.web),
 📜 [Files](https://unpkg.com/extra-integer/),
-📰 [Docs](https://nodef.github.io/extra-integer/).
+📰 [Docs](https://nodef.github.io/extra-integer/),
 📘 [Wiki](https://github.com/nodef/extra-integer/wiki/).
 
 A [32-bit integer] can store values from −2^31 ([MIN_VALUE]) to 2^31 − 1
@@ -70,13 +70,15 @@ integer.nextPow2(63);
 ## References
 
 - [Bit Twiddling Hacks by Sean Eron Anderson](https://graphics.stanford.edu/~seander/bithacks.html)
+- [bit-twiddle package by @mikolalysenko](https://www.npmjs.com/package/bit-twiddle)
 
 
 <br>
 <br>
 
 
-[![](https://img.youtube.com/vi/EK32jo7i5LQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=EK32jo7i5LQ)
+[![](https://img.youtube.com/vi/EK32jo7i5LQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=EK32jo7i5LQ)<br>
+[![DOI](https://zenodo.org/badge/133167597.svg)](https://zenodo.org/badge/latestdoi/133167597)
 
 
 [MIN_VALUE]: https://nodef.github.io/extra-integer/modules.html#MIN_VALUE
