@@ -115,7 +115,7 @@ const POW10_VAL32: number[] = [
 ];
 
 /**
- * Finds power-of-10 of value.
+ * Find power-of-10 of value.
  * @param x an int32
  */
 export function pow10(x: number): number {

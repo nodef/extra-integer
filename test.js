@@ -1,27 +1,19 @@
-const bit = require('./');
+const integer = require('./');
 const assert = require('assert');
 
 
 // 1. Basic tests.
 function example1() {
-  var a = bit.count(7);
-  assert.equal(a, 3);
-  // → 3 (111 ⇒ 3)
+  var a = integer.is(9.11e-31);
+  assert.equal(a, false);
+  // → false
 
-  var a = bit.parity(8, 2);
-  assert.equal(a, 2);
-  // → 2 (10,00 ⇒ 10)
+  var a = integer.log10(10000);
+  assert.equal(a, 4);
+  // → 4
 
-  var a = bit.swap(6, 1, 0);
-  assert.equal(a, 5);
-  // → 5 (110 ⇒ 101)
-
-  var a = bit.reverse(0xFFFF0000);
-  assert.equal(a, 65535);
-  // → 65535 (0x0000FFFF)
-
-  var a = bit.signExtend(15, 4);
-  assert.equal(a, -1);
-  // → -1
+  var a = integer.nextPow2(63);
+  assert.equal(a, 64);
+  // → 64
 }
 example1();

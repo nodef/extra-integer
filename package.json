@@ -1,7 +1,7 @@
 {
   "name": "extra-integer",
-  "version": "2.1.1",
-  "description": "32-bit integer can store values from −2^31 to 2^31 − 1.",
+  "version": "2.1.2",
+  "description": "Common operations for 32-bit integers.",
   "main": "index.js",
   "module": "index.mjs",
   "sideEffects": false,
