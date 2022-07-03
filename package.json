@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Common operations for 32-bit integers.",
   "main": "index.js",
   "module": "index.mjs",

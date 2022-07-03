@@ -29,7 +29,20 @@ export function is(v: any): boolean {
 // ----
 
 /**
- * Check if two values have equal sign.
+ * Get the absolute of an int32.
+ * @param x an int32
+ * @returns +ve value
+ */
+ export function abs(x: number): number {
+  var m = x>>31;
+  return (x+m)^m;
+}
+// - https://graphics.stanford.edu/~seander/bithacks.html#IntegerAbs
+// - https://www.npmjs.com/package/bit-twiddle
+
+
+/**
+ * Check if two int32s have equal sign.
  * @param x an int32
  * @param y another int32
  * @returns are signs equal?
@@ -40,25 +53,13 @@ export function signEqual(x: number, y: number): boolean {
 // - https://graphics.stanford.edu/~seander/bithacks.html#DetectOppositeSigns
 
 
-/**
- * Get absolute value.
- * @param x an int32
- * @returns +ve value
- */
-export function abs(x: number): number {
-  var m = x>>31;
-  return (x+m)^m;
-}
-export default abs;
-// - https://graphics.stanford.edu/~seander/bithacks.html#IntegerAbs
-// - https://www.npmjs.com/package/bit-twiddle
 
 
 // POWER / LOGARITHM
 // -----------------
 
 /**
- * Check if value is a power-of-2.
+ * Check if int32 is a power-of-2.
  * @param x an int32
  * @returns is power-of-2?
  */
@@ -70,9 +71,9 @@ export function isPow2(x: number): boolean {
 
 
 /**
- * Find previous power-of-2 of value.
+ * Find previous power-of-2 of an int32.
  * @param x an int32
- * @returns previous power-of-2
+ * @returns 2ᵃ | 2ᵃ < x and 2ᵃ ≥ x/2
  */
 export function prevPow2(x: number): number {
   return nextPow2(x+1)>>>1;
@@ -82,9 +83,9 @@ export function prevPow2(x: number): number {
 
 
 /**
- * Find next power-of-2 of value.
+ * Find next power-of-2 of an int32.
  * @param x an int32
- * @returns next power-of-2
+ * @returns 2ᵃ | 2ᵃ > x and 2ᵃ ≤ 2x
  */
 export function nextPow2(x: number): number {
   x--;
@@ -100,9 +101,9 @@ export function nextPow2(x: number): number {
 
 
 /**
- * Find power-of-2 of value.
+ * Find the power-of-2 of an int32.
  * @param x an int32
- * @returns power-of-2
+ * @returns 2ˣ
  */
 export function pow2(x: number): number {
   return 1<<x;
@@ -115,8 +116,9 @@ const POW10_VAL32: number[] = [
 ];
 
 /**
- * Find power-of-10 of value.
+ * Find the power-of-10 of an int32.
  * @param x an int32
+ * @returns 10ˣ
  */
 export function pow10(x: number): number {
   return x<0? 0:POW10_VAL32[x];
@@ -130,9 +132,9 @@ const DEBRUIJN_POS32: number[] = [
 ];
 
 /**
- * Find log-base-2 of value.
+ * Find the base-2 logarithm of an int32.
  * @param x an int32
- * @returns log-base-2 result
+ * @returns log₂(x)
  */
 export function log2(x: number): number {
   x |= x>>>1;
@@ -147,9 +149,9 @@ export function log2(x: number): number {
 
 
 /**
- * Find log-base-10 of value.
+ * Find the base-10 logarithm of an int32.
  * @param x an int32
- * @returns log-base-10 result
+ * @returns log₁₀(x)
  */
 export function log10(x: number): number {
   var a = ((log2(x) + 1)*1233) >>> 12;

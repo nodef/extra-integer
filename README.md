@@ -9,7 +9,7 @@ A [32-bit integer] can store values from −2^31 ([MIN_VALUE]) to 2^31 − 1
 ([MAX_VALUE]). JavaScript converts a `Number` (a *64-bit floating point number*)
 to a *32-bit* *integer* (`int32`) when bitwise operators (such as `|`) are
 applied. Use [is] to check is a number can be represented as a *32-bit integer*.
-**Sign**-based operations include [signEqual] and [abs]. **Power/logarithm**
+**Sign**-based operations include [abs] and [signEqual]. **Power/logarithm**
 related operations include [isPow2], [prevPow2], [nextPow2], [pow2], [pow10],
 [log2], and [log10].
 
@@ -49,19 +49,19 @@ integer.nextPow2(63);
 |  ----  |  ----  |
 | [MIN_VALUE] | Minimum int32 value. |
 | [MAX_VALUE] | Maximum int32 value. |
-|   |   |
+|  |  |
 | [is] | Check if value is int32. |
-|   |   |
-| [signEqual] | Check if two values have equal sign. |
-| [abs] | Get absolute value. |
-|   |   |
-| [isPow2] | Check if value is a power-of-2. |
-| [prevPow2] | Find previous power-of-2 of value. |
-| [nextPow2] | Find next power-of-2 of value. |
-| [pow2] | Find power-of-2 of value. |
-| [pow10] | Find power-of-10 of value. |
-| [log2] | Find log-base-2 of value. |
-| [log10] | Find log-base-10 of value. |
+|  |  |
+| [abs] | Get the absolute of an int32. |
+| [signEqual] | Check if two int32s have equal sign. |
+|  |  |
+| [isPow2] | Check if int32 is a power-of-2. |
+| [prevPow2] | Find previous power-of-2 of an int32. |
+| [nextPow2] | Find next power-of-2 of an int32. |
+| [pow2] | Find the power-of-2 of an int32. |
+| [pow10] | Find the power-of-10 of an int32. |
+| [log2] | Find the base-2 logarithm of an int32. |
+| [log10] | Find the base-10 logarithm of an int32. |
 
 <br>
 <br>
