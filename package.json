@@ -1,6 +1,6 @@
 {
   "name": "extra-integer",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "Common operations for 32-bit integers.",
   "main": "index.js",
   "module": "index.mjs",
@@ -12,7 +12,8 @@
   "scripts": {
     "test": "exit",
     "build": "node ./build",
-    "deploy": "node ./build deploy"
+    "publish-docs": "node ./build publish-docs",
+    "publish-packages": "node ./build publish-packages"
   },
   "keywords": [
     "extra",
@@ -20,6 +21,8 @@
     "32bit",
     "bit"
   ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodef/extra-integer.git"
@@ -28,12 +31,10 @@
     "url": "https://github.com/nodef/extra-integer/issues"
   },
   "homepage": "https://github.com/nodef/extra-integer#readme",
-  "author": "wolfram77@gmail.com",
-  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
-    "extra-build": "^2.1.31",
+    "extra-build": "^2.2.21",
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-dts": "^4.2.2"
   }
