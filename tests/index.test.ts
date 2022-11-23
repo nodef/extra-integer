@@ -1,14 +1,16 @@
 import * as integer from "../src"
-import {is}         from "../src";
-import {abs}        from "../src";
-import {signEqual}  from "../src";
-import {isPow2}     from "../src";
-import {prevPow2}   from "../src";
-import {nextPow2}   from "../src";
-import {pow2}       from "../src";
-import {pow10}      from "../src";
-import {log2}       from "../src";
-import {log10}      from "../src";
+import {
+  is,
+  abs,
+  signEqual,
+  isPow2,
+  prevPow2,
+  nextPow2,
+  pow2,
+  pow10,
+  log2,
+  log10,
+} from "../src";
 
 
 
@@ -31,6 +33,9 @@ test("example1", () => {
 
 
 
+// ABOUT
+// -----
+
 test("is", () => {
   var a = is(95);
   expect(a).toBe(true);
@@ -40,6 +45,11 @@ test("is", () => {
   expect(a).toBe(false);
 });
 
+
+
+
+// SIGN
+// ----
 
 test("abs", () => {
   var a = abs(-92);
@@ -60,6 +70,11 @@ test("signEqual", () => {
   expect(a).toBe(true);
 });
 
+
+
+
+// POWER / LOGARITHM
+// -----------------
 
 test("isPow2", () => {
   var a = isPow2(1024);
