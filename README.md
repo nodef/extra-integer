@@ -85,15 +85,15 @@ integer.nextPow2(63);
 [![Maintainability](https://api.codeclimate.com/v1/badges/d9c12df80ca4add5422e/maintainability)](https://codeclimate.com/github/nodef/extra-integer/maintainability)
 
 
-[MIN_VALUE]: https://nodef.github.io/extra-integer/variables/MIN_VALUE.html
-[MAX_VALUE]: https://nodef.github.io/extra-integer/variables/MAX_VALUE.html
-[is]: https://nodef.github.io/extra-integer/functions/is.html
-[signEqual]: https://nodef.github.io/extra-integer/functions/signEqual.html
-[abs]: https://nodef.github.io/extra-integer/functions/abs.html
-[isPow2]: https://nodef.github.io/extra-integer/functions/isPow2.html
-[prevPow2]: https://nodef.github.io/extra-integer/functions/prevPow2.html
-[nextPow2]: https://nodef.github.io/extra-integer/functions/nextPow2.html
-[pow2]: https://nodef.github.io/extra-integer/functions/pow2.html
-[pow10]: https://nodef.github.io/extra-integer/functions/pow10.html
-[log2]: https://nodef.github.io/extra-integer/functions/log2.html
-[log10]: https://nodef.github.io/extra-integer/functions/log10.html
+[MIN_VALUE]: https://github.com/nodef/extra-integer/wiki/MIN_VALUE
+[MAX_VALUE]: https://github.com/nodef/extra-integer/wiki/MAX_VALUE
+[is]: https://github.com/nodef/extra-integer/wiki/is
+[signEqual]: https://github.com/nodef/extra-integer/wiki/signEqual
+[abs]: https://github.com/nodef/extra-integer/wiki/abs
+[isPow2]: https://github.com/nodef/extra-integer/wiki/isPow2
+[prevPow2]: https://github.com/nodef/extra-integer/wiki/prevPow2
+[nextPow2]: https://github.com/nodef/extra-integer/wiki/nextPow2
+[pow2]: https://github.com/nodef/extra-integer/wiki/pow2
+[pow10]: https://github.com/nodef/extra-integer/wiki/pow10
+[log2]: https://github.com/nodef/extra-integer/wiki/log2
+[log10]: https://github.com/nodef/extra-integer/wiki/log10
