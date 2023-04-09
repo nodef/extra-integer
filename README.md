@@ -1,21 +1,24 @@
-Common operations for 32-bit integers.<br>
+A [32-bit integer] can store values from `-2^31` to `2^31 - 1`.<br>
 📦 [Node.js](https://www.npmjs.com/package/extra-integer),
 🌐 [Web](https://www.npmjs.com/package/extra-integer.web),
 📜 [Files](https://unpkg.com/extra-integer/),
 📰 [Docs](https://nodef.github.io/extra-integer/),
 📘 [Wiki](https://github.com/nodef/extra-integer/wiki/).
 
-A [32-bit integer] can store values from −2^31 ([MIN_VALUE]) to 2^31 − 1
+This package deals with the manipulation of **32-bit integers** in JavaScript,
+which can store values ranging from `-2^31` ([MIN_VALUE]) to `2^31 - 1`
 ([MAX_VALUE]). JavaScript converts a `Number` (a *64-bit floating point number*)
-to a *32-bit* *integer* (`int32`) when bitwise operators (such as `|`) are
-applied. Use [is] to check is a number can be represented as a *32-bit integer*.
+to a *32-bit integer* (`int32`) when bitwise operators (such as `|`) are
+applied.
+
+Use [is] to check is a number can be represented as a *32-bit integer*.
 **Sign**-based operations include [abs] and [signEqual]. **Power/logarithm**
 related operations include [isPow2], [prevPow2], [nextPow2], [pow2], [pow10],
 [log2], and [log10].
 
-This package is available in *Node.js* and *Web* formats. The web format
-is exposed as `extra_integer` standalone variable and can be loaded from
-[jsDelivr CDN].
+This package is available in *Node.js* and *Web* formats. To use it on the web,
+simply use the `extra_integer` global variable after loading with a `<script>`
+tag from the [jsDelivr CDN].
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
 
@@ -25,17 +28,17 @@ is exposed as `extra_integer` standalone variable and can be loaded from
 <br>
 
 ```javascript
-const integer = require('extra-integer');
-// import * as integer from "extra-integer";
-// import * as integer from "https://unpkg.com/extra-integer/index.mjs"; (deno)
+const xinteger = require('extra-integer');
+// import * as xinteger from "extra-integer";
+// import * as xinteger from "https://unpkg.com/extra-integer/index.mjs"; (deno)
 
-integer.is(9.11e-31);
+xinteger.is(9.11e-31);
 // → false
 
-integer.log10(10000);
+xinteger.log10(10000);
 // → 4
 
-integer.nextPow2(63);
+xinteger.nextPow2(63);
 // → 64
 ```
 

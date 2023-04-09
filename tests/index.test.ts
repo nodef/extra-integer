@@ -1,4 +1,3 @@
-import * as integer from "../src"
 import {
   is,
   abs,
@@ -17,15 +16,15 @@ import {
 
 // 1. Basic tests.
 test("example1", () => {
-  var a = integer.is(9.11e-31);
+  var a = is(9.11e-31);
   expect(a).toBe(false);
   // → false
 
-  var b = integer.log10(10000);
+  var b = log10(10000);
   expect(b).toBe(4);
   // → 4
 
-  var b = integer.nextPow2(63);
+  var b = nextPow2(63);
   expect(b).toBe(64);
   // → 64
 });

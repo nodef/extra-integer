@@ -4,7 +4,7 @@
 /** Minimum int32 value. */
 export const MIN_VALUE: number = -2147483648|0;
 /** Maximum int32 value. */
-export const MAX_VALUE: number = 2147483647|0;
+export const MAX_VALUE: number =  2147483647|0;
 
 
 

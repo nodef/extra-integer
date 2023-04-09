@@ -1,7 +1,7 @@
 {
   "name": "extra-integer",
-  "version": "2.1.14",
-  "description": "Common operations for 32-bit integers.",
+  "version": "2.1.15",
+  "description": "A 32-bit integer can store values from -2^31 to 2^31 - 1.",
   "main": "index.js",
   "module": "index.mjs",
   "sideEffects": false,
@@ -32,13 +32,13 @@
   },
   "homepage": "https://github.com/nodef/extra-integer#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^24.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@types/jest": "^29.2.5",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@types/jest": "^29.5.0",
     "extra-build": "^2.2.41",
-    "jest": "^29.3.1",
+    "jest": "^29.5.0",
     "rollup-plugin-cleanup": "^3.2.1",
-    "rollup-plugin-dts": "^5.1.1",
-    "ts-jest": "^29.0.5"
+    "rollup-plugin-dts": "^5.3.0",
+    "ts-jest": "^29.1.0"
   }
 }
