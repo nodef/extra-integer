@@ -2,7 +2,7 @@ A [32-bit integer] can store values from `-2^31` to `2^31 - 1`.<br>
 
 ▌
 📦 [JSR](https://jsr.io/@nodef/extra-integer),
-📦 [NPM](https://www.npmjs.com/package/extra-integer),
+📦 [NPM](https://www.npmjs.com/package/@nodef/extra-integer),
 📰 [Docs](https://jsr.io/@nodef/extra-integer/doc).
 
 This package deals with the manipulation of **32-bit integers** in JavaScript,
@@ -76,15 +76,15 @@ xinteger.nextPow2(63);
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-integer)
 
 
-[MIN_VALUE]: https://jsr.io/@nodef/extra-version/doc/~/MIN_VALUE
-[MAX_VALUE]: https://jsr.io/@nodef/extra-version/doc/~/MAX_VALUE
-[is]: https://jsr.io/@nodef/extra-version/doc/~/is
-[signEqual]: https://jsr.io/@nodef/extra-version/doc/~/signEqual
-[abs]: https://jsr.io/@nodef/extra-version/doc/~/abs
-[isPow2]: https://jsr.io/@nodef/extra-version/doc/~/isPow2
-[prevPow2]: https://jsr.io/@nodef/extra-version/doc/~/prevPow2
-[nextPow2]: https://jsr.io/@nodef/extra-version/doc/~/nextPow2
-[pow2]: https://jsr.io/@nodef/extra-version/doc/~/pow2
-[pow10]: https://jsr.io/@nodef/extra-version/doc/~/pow10
-[log2]: https://jsr.io/@nodef/extra-version/doc/~/log2
-[log10]: https://jsr.io/@nodef/extra-version/doc/~/log10
+[MIN_VALUE]: https://jsr.io/@nodef/extra-integer/doc/~/MIN_VALUE
+[MAX_VALUE]: https://jsr.io/@nodef/extra-integer/doc/~/MAX_VALUE
+[is]: https://jsr.io/@nodef/extra-integer/doc/~/is
+[signEqual]: https://jsr.io/@nodef/extra-integer/doc/~/signEqual
+[abs]: https://jsr.io/@nodef/extra-integer/doc/~/abs
+[isPow2]: https://jsr.io/@nodef/extra-integer/doc/~/isPow2
+[prevPow2]: https://jsr.io/@nodef/extra-integer/doc/~/prevPow2
+[nextPow2]: https://jsr.io/@nodef/extra-integer/doc/~/nextPow2
+[pow2]: https://jsr.io/@nodef/extra-integer/doc/~/pow2
+[pow10]: https://jsr.io/@nodef/extra-integer/doc/~/pow10
+[log2]: https://jsr.io/@nodef/extra-integer/doc/~/log2
+[log10]: https://jsr.io/@nodef/extra-integer/doc/~/log10
